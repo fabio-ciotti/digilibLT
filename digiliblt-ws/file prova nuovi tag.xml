@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="file:teilite.rnc" type="compact"?>
+<!-- NB. quando inserite i contenuti nei tag dovete eliminare le parentesi quadre -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[titolo]</title>
+                <author>[autore]</author>
+                <respStmt>
+                    <resp>Correzione linguistica</resp>
+                    <name>[nome]</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Codifica XML</resp>
+                    <name>[nome]</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>DigilibLT Project</publisher>
+                <pubPlace>Vercelli</pubPlace>
+                <date>2011</date>
+                <availability>
+                    <p><ref target="http://creativecommons.org/licenses/by-nc-sa/3.0/it/"/></p>
+                </availability>
+                <idno>[dltxxxxxx]</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>[citazione bibliografica estesa della fonte]</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <charDecl>
+                <char xml:id="char1">
+                    <charName>semuncia</charName>
+                    <desc>L barrata</desc>
+                </char>
+                <char xml:id="char2">
+                    <charName>denarius</charName>
+                    <desc>X barrata</desc>
+                </char>
+            </charDecl>
+            <editorialDecl>
+                <p>[note sulla trascrizione e codifica]</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change>[evento 2]</change>
+            <change>[evento 1]</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+        <body> 
+            <div type="lib" n="I"><head>Liber I</head>
+                <div n="1"><p> <milestone unit="MSS" n="D"/>BELLA canimus <milestone unit="MSS" n="RV"/> Scilicet facta.</p>
+                    <div type="MSS" n="aRV"><p> EMATHIOS ema Graece sanguis. Vel ab Emathio rege. Emathia civitas est Thessaliae. Id est Thessalios, ab Em<supplied>athi</supplied>o rege.</p></div>  
+                    </div>
+                <div n="2"><p> <milestone unit="MSS" n="DRV"/>Inserisco qui una prova per il tag dei numeri. Ecco l'esempio <num value="10000">X</num></p></div>
+            
+            </div>
+            <div type="lib" n="II"><head>Liber II</head>
+                <div n="1"> <div type="MSS" n="DRV"><p> COGNATASQ. A. idest propinquos. Proprias. Romanas contra Romanas conversas, vel conversas in sua viscera. RVPTO FOEDERE R. hoc est mortua Iulia, quam Pompeius in uxorem accepit, qua vivente pax praevaluit inter eos.</p></div>
+                </div>
+                <div n="2"><p><milestone unit="MSS" n="RV"/>Inserisco qui un esempio di simbolo per cui esiste il glifo <g ref="#char1">£</g>
+                    <milestone unit="MSS" n="DM"/>Inserisco qui un esempio di simbolo per cui il glifo non esiste <g ref="#char2"/>
+                </p></div></div>
+        </body>
+    </text>
+
+</TEI>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="file:teilite.rnc" type="compact"?>
+<!-- NB. quando inserite i contenuti nei tag dovete eliminare le parentesi quadre -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>[titolo]</title>
+                <author>[autore]</author>
+                <respStmt>
+                    <resp>Correzione linguistica</resp>
+                    <name>[nome]</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Codifica XML</resp>
+                    <name>[nome]</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>DigilibLT Project</publisher>
+                <pubPlace>Vercelli</pubPlace>
+                <date>2011</date>
+                <availability>
+                    <p><ref target="http://creativecommons.org/licenses/by-nc-sa/2.5/it/"/></p>
+                </availability>
+                <idno>[dltxxxxxx]</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>[citazione bibliografica estesa della fonte]</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <charDecl>
+                <char>
+                    <charName xml:id="char1"></charName>
+                    <desc>[descrizione carattere]</desc>
+                </char>
+            </charDecl>
+            <editorialDecl>
+                <p>[note sulla trascrizione e codifica]</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change>[evento 2]</change>
+            <change>[evento 1]</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+        <body> </body>
+    </text>
+
+</TEI>

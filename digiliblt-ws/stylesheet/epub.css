@@ -1,0 +1,337 @@
+/* 
+** Copyright 2011 TEI Consortium
+
+$Id: tei.css 10179 2012-03-25 14:46:46Z rahtz $
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+ This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+ You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the 
+Free Software Foundation, Inc., 
+59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+*/
+
+
+/* main layout */
+
+
+body{
+   color: #000000;
+   background-color: #FFFFFF;
+   margin: 5pt;
+   padding:0;
+   font-family: Cardo, Garamond, "Times New Roman", serif;
+/*   font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;*/
+}
+
+
+/* section headings */
+#hdr h1 { color: red; }
+
+h1 {
+   font-weight: bold;
+   font-size: 14pt;
+   line-height: 34pt;
+}
+
+h2 {
+   font-size: 13pt;
+   line-height: 20pt;
+   margin-top: 18pt;
+   font-weight: bold;
+}
+
+h3 {
+   font-size: 12pt;
+   line-height: 18pt;
+   font-weight: bold;
+   font-style: italic;
+}
+
+
+h1.maintitle {
+   margin-left: 0px;
+   font-weight: bold;
+   bottom: 5px;
+}
+
+h1.title {
+   margin-left: 0px;
+   font-weight: bold;
+   bottom: 5px;
+}
+
+h2.subtitle {
+   margin-left: 10px;
+   font-family: Arial,Helvetica,sans-serif;
+   font-weight: bold;
+}
+
+.footer {
+   text-align : center;
+   font-family: Arial,Helvetica,sans-serif; 
+   font-size : 0.8em;
+}
+
+
+/* specialized divs */
+div.letter {
+   margin-left: 2em;
+   margin-right: 2em;
+   margin-top: 6pt;
+   margin-bottom: 6pt;
+   border-top: 1pt solid green;
+   border-bottom: 1pt solid green;
+}
+/* title page */
+div.titlePage,div.titlepage {
+   border-top: 2pt solid #000000;
+   border-bottom: 2pt solid #000000;
+   padding-top: 6pt;
+   padding-bottom: 6pt;
+   font-size: larger;
+   text-align: center;
+}
+.docImprint {
+    display: block;
+   font-style: italic;    
+}
+.docDate {
+   font-style: italic;    
+}
+.docTitle {
+    display: block;
+    margin-top: 6pt;
+    font-weight: bold;
+    margin-bottom: 18pt;
+}
+.docAuthor {
+    font-style: italic;
+}
+
+.byline {
+    display: block;
+}   
+
+div.dateline{
+   text-align: right;
+}
+/* verse */
+div.lg {
+   margin-left: 10px;
+   margin-bottom: 10px;
+}
+
+div.signed {
+    text-align:left;
+}
+div.l {
+    text-align:left;
+    margin-left: 10px;
+    margin-bottom: 1px;
+}
+div.epigraph {
+    margin: 20pt;
+}
+div.numbering {
+    float:left; 
+    font-size:smaller; 
+    width: 2em;
+}
+
+div.linenumber { }
+
+div.indent1 {
+   margin-left: 1em;
+}
+div.indent2 {
+   margin-left: 2em;
+}
+div.indent3 {
+   margin-left: 3em;
+}
+div.indent4 {
+   margin-left: 4em;
+}
+div.indent5 {
+   margin-left: 5em;
+}
+div.indent6 {
+   margin-left: 6em;
+}
+
+/* general purpose block aligns */
+.centerbold {
+    text-align:center;
+    font-weight: bold;
+}
+.center {
+    text-align:center;
+}
+.right {
+    text-align:right;
+}
+.left {
+    text-align:left;
+}
+
+/* misc inline*/
+
+span.foreign {
+    font-style: italic;
+}
+
+.plain {
+   text-decoration: none;
+}
+
+p.box {
+   border: 1pt solid #000000;
+}
+
+.small {
+   font-size: small;
+}
+
+td.label {
+   font-weight: bold;
+   background-color: #AAAAAA;
+}
+tr.label td {
+   font-weight: bold;
+   background-color: #AAAAAA;
+}
+
+span.label {
+    font-weight: bold;
+}
+
+h5 {    
+   font-size: 100%;
+}
+h6 {    
+   font-size: 100%;
+}
+
+div.tocFront {
+   border-bottom: 1pt solid #000000;
+}
+div.tocBack {
+   border-bottom: 1pt solid #000000;
+}
+div.tocBody {
+   border-bottom: 1pt solid #000000;
+}
+
+/* generic <hi> */
+span.hi {
+   font-weight: bold;
+}
+
+/* from drama */
+/* speeches in drama */
+div.p-in-sp {
+    margin-left: 1em;
+    }
+div.sp {
+    margin-top: 4pt;
+}
+div.spProse {
+    text-indent: -1em;
+    margin-left: 1em;
+}
+div.speaker {
+    font-weight: bold;
+}
+span.speaker {
+    font-style: italic;
+}
+
+span.actor {  
+	   font-style:italic;
+}
+span.camera {
+ font-style: italic;
+}
+span.caption {
+ font-style: italic;
+}
+span.role {
+ font-style: italic;
+}
+span.set {
+ font-style: italic;
+}
+
+p, div.p {
+ margin-top: 0.3em; 
+ text-align: justify;
+}
+
+blockquote {
+     margin-left: 10px;    
+}
+
+/* <hi> rend values */
+span.typewriter{
+    font-family: monospace;
+}
+span.normalweight{
+}
+span.smallcaps{
+    font-variant: small-caps;
+}
+span.bold{
+    font-weight: bold;
+}
+span.italic{
+    font-style:italic;
+}
+span.capsall{
+    text-transform: uppercase;
+}
+span.strikethrough{
+    text-decoration: line-through;
+}
+span.strikedoublethrough{
+    text-decoration: line-through;
+}
+span.underline{
+    text-decoration: underline;
+}
+span.underwavyline{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+span.underdoubleline{
+    text-decoration: underline;
+}
+span.superscript {
+    vertical-align: top;
+    font-size: 70%;
+}
+span.subscript {
+    vertical-align: bottom;
+    font-size: 70%;
+}
+span.numberParagraph:before {
+    content:"[";
+}
+span.numberParagraph:after {
+    content:"] ";
+}
+span.numberParagraph {
+    font-size: smaller;
+    color: grey;
+}
+
+div.figure {
+    text-align: center;
+}
